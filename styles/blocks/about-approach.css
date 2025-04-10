@@ -1,0 +1,141 @@
+.about-approach {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 114px;
+    gap: 100px;
+}
+
+.about-approach__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.about-approach__media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    min-width: 629px;
+    max-width: 629px;
+}
+
+.about-approach__media-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-approach__media--label {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+.about-approach__label-text {
+    align-self: end;
+    font-size: 42px;
+    text-align: start;
+    padding-bottom: 40px;
+    padding-left: 33px;
+}
+
+.about-approach__media--wide {
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+.about-approach__top {
+    display: flex;
+    justify-content: center;
+}
+
+.about-approach__content {
+    padding-top: 63px;
+    max-width: 720px;
+}
+
+.about-approach__title {
+    margin-bottom: 34px;
+}
+
+.about-approach__description {
+    margin-bottom: 40px;
+}
+
+.about-approach__card-text,
+.about-approach__description {
+    color: var(--color-dark-gray);
+    font-weight: 400;
+}
+
+.about-approach__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.about-approach__card {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 39px;
+    box-shadow: var(--box-shadow-card);
+}
+
+.about-approach__header {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 42px;
+}
+
+.about-approach__card-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    width: 65%;
+}
+
+.about-approach__card-icon {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: var(--color-platinum);
+    }
+}
+
+@media (max-width: 1280px) {
+    .about-approach__media-grid {
+        display: none;
+    }
+
+    .about-approach__content {
+        text-align: center;
+    }
+
+    .about-approach__cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1480px) {
+    .about-approach__content {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-approach__card-icon {
+        display: none;
+    }
+}

@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    min-height: 100vh;
+}
+
+.header__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    gap: 30px;
+    padding-block: 15px;
+    min-height: var(--link-min-heigt);
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    width: 24%;
+}
+
+.header__aside:hover {
+    background-color: var(--color-cobalt-blue);
+}
+
+.aside__text {
+    font-size: clamp(18px, 1.88vw, 38px);
+}
+
+.header-actions {
+    display: flex;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    padding-inline: 4.01vw;
+    padding-block: 15px;
+    min-height: var(--link-min-heigt);
+    white-space: nowrap;
+    background-color: var(--color-accent);
+}
+
+.header-button:hover {
+    background-color: var(--color-cobalt-blue);
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+    width: 100%;
+    background-color: var(--color-dark);
+    min-height: 117px;
+}
+
+.header-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 53px;
+}
+
+.header-menu-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 117px;
+}
+
+
+.header-menu-link:hover {
+    color: var(--color-accent)
+}
+
+.hero {
+    background-image: url('../../assets/images/header/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - var(--link-min-heigt));
+    width: 100%;
+}
+
+.hero__body {
+    margin: 123px 111px;
+    max-width: 878px;
+    color: var(--color-light)
+}
+
+.hero__title {
+    margin-bottom: 52px;
+}
+
+.hero__description {
+    font-size: 22px;
+    margin-bottom: 67px;
+}
+
+@media (max-width: 1480px) {
+    .header-menu,
+    .header-menu-link {
+        min-height: 80px;
+    }
+
+    .header-button {
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .header__aside {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        width: 100%;
+    }
+
+    .hero__body {
+        margin: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-actions {
+        flex-direction: column;
+    }
+
+    .header-menu,
+    .header-menu-link {
+        min-height: 50px;
+    }
+
+    .hero__title {
+        margin-bottom: 22px;
+    }
+
+    .hero__description {
+        margin-bottom: 27px;
+        font-size: 18px;
+    }
+
+    .hero__body {
+        margin: 30px;
+    }
+}

@@ -1,0 +1,12 @@
+@import "./normalize.css";
+@import "./fonts.css";
+@import "./variables.css";
+@import "./globals.css";
+@import "./utils.css";
+@import "./blocks/button.css";
+@import "./blocks/header.css";
+@import "./blocks/about-approach.css";
+@import "./blocks/invest.css";
+@import "./blocks/faq.css";
+@import "./blocks/stats.css";
+@import "./blocks/footer.css";

@@ -1,0 +1,38 @@
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-light);
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.07em;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+
+h1 {
+    font-size: clamp(28px, 2.71vw, 52px);
+}
+
+h2 {
+    font-size: clamp(32px, 2.18vw, 42px);;
+}
+
+h3 {
+    font-size: clamp(22px, 1.88vw, 36px);
+}
