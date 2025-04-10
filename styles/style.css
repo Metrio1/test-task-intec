@@ -118,7 +118,7 @@ h3 {
     justify-content: center;
     text-align: center;
     font-weight: 700;
-    row-gap: 10px;
+    gap: 30px;
     padding-block: 15px;
     min-height: var(--link-min-heigt);
     background-color: var(--color-accent);
@@ -132,7 +132,6 @@ h3 {
 
 .aside__text {
     font-size: clamp(18px, 1.88vw, 38px);
-    margin-bottom: 30px;
 }
 
 .header-actions {
@@ -142,7 +141,7 @@ h3 {
 .header-button {
     display: flex;
     align-items: center;
-    padding-inline: 78px;
+    padding-inline: 4.01vw;
     padding-block: 15px;
     min-height: var(--link-min-heigt);
     white-space: nowrap;
@@ -157,7 +156,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: 30px;
+    padding-inline: 20px;
     width: 100%;
     background-color: var(--color-dark);
     min-height: 117px;
@@ -190,7 +189,7 @@ h3 {
 }
 
 .hero__body {
-    padding: 123px 111px;
+    margin: 123px 111px;
     max-width: 878px;
     color: var(--color-light)
 }
@@ -228,7 +227,7 @@ h3 {
     }
 
     .hero__body {
-        padding: 60px;
+        margin: 60px;
     }
 }
 
@@ -252,7 +251,7 @@ h3 {
     }
 
     .hero__body {
-        padding: 30px;
+        margin: 30px;
     }
 }
 
@@ -386,6 +385,12 @@ h3 {
     }
 }
 
+@media (max-width: 1480px) {
+    .about-approach__content {
+        padding-top: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .about-approach__card-icon {
         display: none;
@@ -400,8 +405,7 @@ h3 {
 }
 
 .invest__image-wrapper {
-    min-width: 300px;
-    max-width: 50%;
+    min-width: 436px;
     overflow: hidden;
 }
 
@@ -412,18 +416,28 @@ h3 {
     display: block;
 }
 
-.invest__content {
+.invest__body {
     width: 100%;
-    padding: 90px 30px;
+    display: flex;
+    justify-content: center;
+    padding-inline: 30px;
+}
+
+.invest__content {
+    padding-block: 90px;
+    max-width: 1133px;
+    margin-right: 10%;
+    margin-left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 141px;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 
 .invest__intro {
-    max-width: 372px;
+    max-width: 401px;
 }
 
 .invest__title {
@@ -539,6 +553,9 @@ h3 {
         gap: 18px;
     }
 
+    .invest__content {
+        margin: 30px 15px;
+    }
 }
 
 .faq {
